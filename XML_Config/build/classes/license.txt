@@ -1,0 +1,9 @@
+client=ARIVATO GmbH
+ELO-version=Professional
+ERP-system=MENTION
+license-type=1 Server
+product=DOKinform XMLimporter for ELO
+ELO-key=ARIVATO GmbH
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=e87345b9a18f03ac7f122c0673e3a1ac45b447c9
+bytes1=f4307d0ab98ac143157261b063a186e4dad08fcc

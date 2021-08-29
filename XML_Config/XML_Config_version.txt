@@ -1,0 +1,31 @@
+Versionsgeschichte DOKinform XML_Config
+===================================================================
+
+2.0.0 (build 00167)    20.07.2021    ELOClient für ELO20 IX angepasst
+2.0.0 (build 00166)    20.07.2021    Jar Speicherpfad geändert (Für ELO20)
+2.0.0 (build 00165)    20.02.2020    Verschlüßelung des PWD
+2.0.0 (build 00164)    19.09.2019    Einige überflüssige Properties aus der Konfig Datei entfernt + Code dementsprechend angepasst
+2.0.0 (build 00162)    29.08.2019    Checkbox text changed + new property added (CreateSignalFile)
+2.0.0 (build 00161)    21.12.2018    Bugs in Fehler-Tab korrigiert
+2.0.0 (build 00157)    14.03.2018    Lizenz Tab um eine if-Schleife erweitert. Entweder XMLimporter oder OCKARATimporter steht dort als Info und nicht mehr nur XMLimporter
+2.0.0 (build 00156)    14.03.2018    ErrorTab geändert wegen einer Meldung am Anfang (beim Starten des Konfigurators) "error file prüfen"
+2.0.0 (build 00155)    16.02.2018    Changes in the error tab
+2.0.0 (build 00130)    10.01.2018    loadproductinfo: zwei quellen; xml und ockarat 
+2.0.0 (build 00129)    10.01.2018    xml + ockarat configurartors
+2.0.0 (build 00127)    14.11.2017    Location of build files changed - D:\Work\Java\OwnCloud\DOKINFORM\DIST\PRODUCTS -
+2.0.0 (build 00126)    26.10.2017    password encrypted
+2.0.0 (build 00104)    26.10.2017    encrypting pwd
+2.0.0 (build 00103)    18.10.2017    shoError eventhandler expanded
+2.0.0 (build 00052)    11.10.2017    mailsendertab from configurator view taked out
+2.0.0 (build 00044)    20.07.2016    Added compatibility check popup
+7.0.3 (build 00940)    17.06.2015    new build
+7.0.3 (build 00938)    17.06.2015    New build
+2.0.0    07.05.2015    Test
+2.0.0    07.05.2015    Test
+2.0.0    07.05.2015    TestBuild3
+2.0.0    07.05.2015    TestBuild
+2.0.0    07.05.2015    TestBuild
+2.0.0    07.05.2015    BuildTest
+2.0.0    04.05.2015    123
+2.0.0    11.02.2015    
+                           -  Passwort-Feld hinzugef?gt und Buildnummer wird in Titelleiste angezeigt

@@ -1,0 +1,8 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+level.standard=STANDARD
+level.minimum=MINIMUM
+level.fast=FAST
+level.maximum=MAXIMUM
+level.expert=EXPERT

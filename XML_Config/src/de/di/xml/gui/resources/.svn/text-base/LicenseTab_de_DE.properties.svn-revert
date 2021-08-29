@@ -1,0 +1,17 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+licensePanel.border.title=Lizenz
+licenseLabel.text=
+tabTitle.text=Lizenz
+noReadAccess.text=Fehlender Lesezugriff f\u00fcr die gew\u00e4hlte Datei!
+missingFile.text=Sie k\u00f6nnen keine nicht existierende Datei w\u00e4hlen!
+copyFailed.text=Lizenzdatei l\u00e4sst sich nicht installieren!
+noWriteAccess.text=Fehlender Schreibzugriff f\u00fcr die Lizenzdatei {0}!
+errorDialogTitle.text=Fehler
+changeLicenseButton.text=Lizenz \u00e4ndern...
+warning.restart.text=Sie m\u00fcssen den Dienst Neustarten, um die neue Lizenz verwenden zu k\u00f6nnen.
+warning.license.text=Die gew\u00e4hlte Datei ist keine g\u00fcltige Lizenzdatei!
+warning.elo.text=Die Lizenz kann nicht gepr\u00fcft werden, da ELO zur Zeit nicht verf\u00fcgbar oder nicht konfiguriert ist.
+license.violation.text=Lizenzinformationen nicht verf\u00fcgbar oder keine g\u00fcltige Lizenz vorhanden!
+check.license.text=\u00dcberpr\u00fcfe die Lizenzinformationen. Bitte haben Sie einen Augenblick Geduld.

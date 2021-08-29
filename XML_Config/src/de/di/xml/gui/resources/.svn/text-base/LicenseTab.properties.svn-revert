@@ -1,0 +1,17 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+licensePanel.border.title=License
+licenseLabel.text=
+tabTitle.text=License
+noReadAccess.text=Missing read access for selected file!
+missingFile.text=You can't select a non existing file!
+copyFailed.text=Unable to install new license file!
+noWriteAccess.text=Missing write access for license file {0}!
+errorDialogTitle.text=Error
+changeLicenseButton.text=Change license...
+warning.restart.text=You have to restart the service in order to use the new license.
+warning.license.text=Selected file is not a valid license file!
+warning.elo.text=License can not be checked because ELO is currently not available or not configured.
+license.violation.text=Licenseinformation not available or no valid license found!
+check.license.text=Checking license information. This may take a while.

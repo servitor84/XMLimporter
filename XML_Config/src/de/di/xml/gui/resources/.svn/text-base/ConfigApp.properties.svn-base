@@ -1,0 +1,21 @@
+# Application global resources
+
+Application.name = XMLimporter
+Application.title = XMLimporter Configurator
+Application.version = 8.0.0
+Application.vendor = Arivato GmbH
+Application.homepage = http://www.dokinform.de
+Application.description = A GUI for the configuration of the XMLimporter
+Application.vendorId = Arivato
+Application.id = ${Application.name}
+Application.lookAndFeel = system
+quit.Action.text=Exit
+quit.Action.accelerator=ctrl pressed Q
+quit.Action.shortDescription=Exit the application
+noWriteAccess.text=No write access for config file
+unableToWriteFile.text=Unable to write to config file
+canNotWriteFile.text=Can not write to config file.
+errorOnWritingFile.text=Error while writing config file
+fileUnreadable.text=Unreadable config file
+missingTemplatefile.text=You have to select an existing default template file!
+fav.icon=favicon.png

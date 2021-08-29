@@ -1,0 +1,16 @@
+jLabel7.text=Loglevel:
+tabTitle.text=Import
+jpanel1.border.title=Importsettings
+jLabel3.text=Signalfile:
+signalFileCheckBox.text=Check that a signal file is present before the import gets started.
+jLabel4.text=Backup:
+makeBackupCheckBox.text=Make a backup of the input files.
+jLabel5.text=Duplicates:
+checkDuplicatesCheckBox.text=Check for duplicates during import.
+jLabel6.text=User:
+indexServerTextField.text=http://localhost:8080/ix-ERP/ix
+jLabel9.text=IndexServer:
+jLabel8.text=Password:
+userTextField.text=Importer
+jPanel2.border.title=Login
+passwordTextField.text=passwordTextField

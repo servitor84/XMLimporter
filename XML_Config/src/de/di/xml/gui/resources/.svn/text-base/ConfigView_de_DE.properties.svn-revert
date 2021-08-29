@@ -1,0 +1,48 @@
+
+# @Action resources
+
+showAboutBox.Action.text = &Info...
+showAboutBox.Action.shortDescription = Zeigt Informationen \u00fcber die Anwendung
+
+# status bar resources
+
+StatusBar.messageTimeout = 5000
+StatusBar.busyAnimationRate = 30
+StatusBar.idleIcon = busyicons/idle-icon.png
+StatusBar.busyIcons[0]  = busyicons/busy-icon0.png
+StatusBar.busyIcons[1]  = busyicons/busy-icon1.png
+StatusBar.busyIcons[2]  = busyicons/busy-icon2.png
+StatusBar.busyIcons[3]  = busyicons/busy-icon3.png
+StatusBar.busyIcons[4]  = busyicons/busy-icon4.png
+StatusBar.busyIcons[5]  = busyicons/busy-icon5.png
+StatusBar.busyIcons[6]  = busyicons/busy-icon6.png
+StatusBar.busyIcons[7]  = busyicons/busy-icon7.png
+StatusBar.busyIcons[8]  = busyicons/busy-icon8.png
+StatusBar.busyIcons[9]  = busyicons/busy-icon9.png
+StatusBar.busyIcons[10] = busyicons/busy-icon10.png
+StatusBar.busyIcons[11] = busyicons/busy-icon11.png
+StatusBar.busyIcons[12] = busyicons/busy-icon12.png
+StatusBar.busyIcons[13] = busyicons/busy-icon13.png
+StatusBar.busyIcons[14] = busyicons/busy-icon14.png
+jTabbedPane1.AccessibleContext.accessibleName=
+generalTab.AccessibleContext.accessibleDescription=
+tabbedPane.tabs=de.arivato.xml.gui.GeneralTab,de.arivato.xml.gui.FilesTab,de.arivato.xml.gui.MailerTab,de.arivato.xml.gui.LicenseTab
+#NOI18N
+logo.icon=logo.jpg
+logo.text=
+fileMenu.toolTipText=
+backupDirectoryError.text=Backupverzeichnis nicht gesetzt
+inputDirectoryError.text=Eingabeverzeichnis nicht gesetzt
+indexServerUserError.text=Der Benutzername f\u00fcr den Indexserver wurde nicht gesetzt
+loggingDirectoryError.text=Verzeichnis f\u00fcr Logging nicht gesetzt
+errorOutputDirectoryError.text=Fehlerausgabeverzeichnis nicht gesetzt
+recoveryDirectoryError.text=Verzeichnis f\u00fcr Recovery nicht gesetzt
+errorDialogTitle.text=Fehler
+saveAction.Action.shortDescription=Die Konfiguration speichern
+saveAction.Action.text=Speichern
+saveAction.Action.accelerator=ctrl pressed S
+tab.icon=tab_icon.png
+warning.restart=Sie m\u00fcssen den Dienst neustarten, um die neue Konfiguration verwenden zu k\u00f6nnen.
+indexServerPasswordError.text=Es wurde kein Passwort f\u00fcr den Zugriff auf den Indexserver gesetzt
+indexServerURLError.text=Die URL f\u00fcr den Indexserver wurde nicht gesetzt
+duplicatesOutputDirectoryError.text=Doublettenausgabeverzeichnis nicht gesetzt
