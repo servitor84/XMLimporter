@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XMLimporter" default="default" basedir=".">
+    <description>Builds, tests, and runs the project XMLimporter.</description>
+    <import file="nbproject/build-impl.xml"/>
+      <property file="build.properties" />
+
+      
+      <!-- excluding license file + modifying configuration file -->
+      <!-- in order to work comment the target "-pre-dist" and make a new build -->
+<!--    <target name="-pre-dist">
+        <delete file="${product.dir.conf.build}/license.txt" />
+        <delete file="${product.dir.conf.build}/config.properties" />
+        <copy file="${product.dir.conf.dist}/config.properties" tofile="${product.dir.conf.build}/config.properties" />
+    </target>-->
+      
+      
+    <target name="-post-dist">
+        <basename file="${dist.war}" property="dist.warfile" suffix=".war"/>
+        <property file="${product.dir.jarProps}"/> 
+        <jar destfile="${basedir}/dist/XMLStatusReport.war" basedir="${dir.build.web}" 
+             excludes="**/*.html,**/lizenz.jsp,**/conf/**,**/images/**,**/WEB-INF/classes/de/di/xml/web/resource/**,**/WEB-INF/lib/XMLimporter.jar"> <!-- update="true" -->
+            <fileset file="${product.dir.jar}/${product.jar.name}_version.txt" />
+        </jar> 
+        
+        <!-- NEW -->
+        
+        <!-- create a duplicate of the war file for ockaratimporter -->                
+        <jar destfile="${basedir}/dist/XMLStatusReport.war" update="true">  
+           <fileset dir="${basedir}/src/ockaratimporter" />              
+        </jar> 
+        <copy file="${product.dir.jar}/${product.jar.name}_version.html" tofile="${product.dir.deployOckarat}/OCKARATimporter_version.html"/>
+        <copy file="${product.dir.jar}/${product.jar.name}_version.txt" tofile="${product.dir.deployOckarat}/OCKARATimporter_version.txt"/>
+        <copy file="${basedir}/dist/XMLStatusReport.war" tofile="${product.dir.deployOckarat}/OCKARATimporter.war"/>
+        <copy file="${basedir}/dist/XMLStatusReport.war" tofile="${product.dir.deployOckarat}/OCKARATimporter_${app.build}.war"/>             
+        
+        <!--create a duplicate of the war file for xmlimporter (OCKARATimporter-Components have to be deleted) -->
+        <delete file="${basedir}/dist/XMLStatusReport.war" />
+        <jar destfile="${basedir}/dist/XMLStatusReport.war" basedir="${dir.build.web}" excludes="**/*.html,**/lizenz.jsp,**/conf/**,**/images/**">
+            <fileset file="${product.dir.jar}/${product.jar.name}_version.txt" />
+        </jar>                    
+        
+        <jar destfile="${basedir}/dist/XMLStatusReport.war" update="true">
+           <fileset dir="${basedir}/src/xmlimporter" />                                
+        </jar>
+        
+        <!-- END -->
+        
+        <copy file="${product.dir.jar}/${product.jar.name}_version.html" tofile="${product.dir.deploy}/${product.jar.name}_version.html"/>
+        <copy file="${product.dir.jar}/${product.jar.name}_version.txt" tofile="${product.dir.deploy}/${product.jar.name}_version.txt"/>
+        <copy file="${basedir}/dist/XMLStatusReport.war" tofile="${product.dir.deploy}/${product.jar.name}.war"/>
+        <copy file="${basedir}/dist/XMLStatusReport.war" tofile="${product.dir.deploy}/${product.jar.name}_${app.build}.war"/>           
+    </target>   
+    
+</project>

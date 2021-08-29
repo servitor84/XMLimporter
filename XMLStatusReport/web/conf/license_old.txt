@@ -1,0 +1,9 @@
+client=presentation license DE (654) - ELO Digital Office GmbH
+ELO-version=Professional
+ERP-system=MENTION
+license-type=1 Server (ARIVATO GmbH intern)
+product=DOKinform XMLimporter for ELO
+ELO-key=presentation license DE (654) - ELO Digital Office GmbH
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=b52fd7ae92c4a26929cb5ee8aef6741091da60cb
+bytes1=d569e82698623176e06e7d81fc588be6ef25e582

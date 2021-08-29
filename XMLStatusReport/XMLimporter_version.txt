@@ -1,0 +1,29 @@
+Versionsgeschichte DOKinform XMLimporter
+===================================================================
+
+8.0.0 (Build .793)    14.04.2015    
+                           -  Leerzeichen im Archiv-Pfad werden nicht abgeschnitten
+8.0.0 (Build .785)    12.04.2015    
+                           -  Wenn IX nicht verfügbar hängt der XLMimporter beim starten nicht, siehe Meldung in LOG
+8.0.0 (Build .696)    02.03.2015    
+                           -  Die Variable destination kann alle Buchstaben mit Umlauten, Zahlen, runde Klammer, Pilcrow, Komma und eckige Klamme enthalten.
+8.0.0 (Build .659)    19.02.2015    
+                           -  Log-Information in LicenseChecker
+8.0.0 (Build .651)    19.02.2015    
+                           -  Mehr als 24 Stunden wartet auf ELOix, um sich zu verbinden
+8.0.0 (Build .647)    11.02.2015    
+                           -  Bei Versionierung wird das neue Dokument mit einem Dokument aus Archiv mit aktuellstem Ablagedatum (IDateIso) versioniert. 
+8.0.0 (Build .641)    11.02.2015    
+                           -  Current total amount fo successfull / error actions wird im Log ausgegeben. Neuer Configurtator wurde erstellt
+8.0.0 (Build .608)    05.02.2015    
+                           -  Versionierung
+8.0.0 (Build .518)    05.11.2014    
+                           -  Die leeren Dokumente werden in Error-Ordner verschoben
+8.0.0 (Build .515)    17.10.2014    
+                           -  Log-Ausgabe und Statusseite wurde modifiziert. Läuft in Singlethread-Modus
+8.0.0 (Build .515)    14.10.2014    
+                           -  Importer.FileExtension darf beliebieg Lang sein
+8.0.0 (Build .507)    13.10.2014    
+                           -  Log und Statussiete wurde angepasst
+8.0.0(Build .494 )    02.10.2014    
+                           -  Die Funktionalitäten zur Eigenschaft Importer.CheckDuplicates wurde hinzugefügt. Die Aplikation läuft in einem Thread
