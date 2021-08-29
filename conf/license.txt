@@ -1,0 +1,9 @@
+client=presentation license
+ELO-version=Professional
+ERP-system=--
+license-type=1 server
+product=DOKinform XMLimporter for ELO
+ELO-key=presentation license
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=70422094fa3a597142ceae6a5a73d21f0ba7c84b
+bytes1=bf94423f51e56bcb7e8570ba0f2681086b567d69

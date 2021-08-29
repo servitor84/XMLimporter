@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XMLimporter" default="default" basedir=".">
+    <description>Builds, tests, and runs the project XMLimporter.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <property file="build.properties"/>
+    
+    
+    <target name="-post-init">
+        
+        <property file="version.properties" />
+        <propertyfile file="${product.file.version}">
+            <entry key="app.version" value="${application.version.major}.${application.version.minor} (build ${application.version.build})"
+                   default="${application.version.major}.${application.version.minor} (build 01001)"/>
+            <entry key="app.product_name" value="${application.product.name}" />
+            <entry key="app.build" value="${application.version.build}" />
+        </propertyfile>
+        
+        <!-- NEW -->        
+        <propertyfile file="${product.file.versionOCKARAT}">
+            <entry key="app.version" value="${application.version.major}.${application.version.minor} (build ${application.version.build})"
+                      default="${application.version.major}.${application.version.minor} (build 01001)"/>
+            <entry key="app.product_name" value="${application.product.name_ockarat}" />
+            <entry key="app.build" value="${application.version.build}" />
+        </propertyfile>        
+        <!-- END -->
+        
+    </target>
+    
+    <target name="-post-jar">
+        <propertyfile file="version.properties">
+            <entry key="application.version.build" type="int" operation="+" default="01001" pattern="00000"/>
+        </propertyfile>   
+        <property file="${product.file.version}" />
+        <exec executable="${versioninfo.location}">
+            <arg value = "${basedir}"/>
+            <arg value = "${ant.project.name}"/>
+            <arg value = "${app.version}"/>
+        </exec>
+        
+        <!-- NEW -->        
+        <exec executable="${versioninfo.location}">
+            <arg value = "${basedir}"/>
+            <arg value = "OCKARATimporter"/>
+            <arg value = "${app.version}"/>
+        </exec>
+        <copy file="${basedir}/dist/XMLimporter.jar" tofile="${basedir}/dist/OCKARATimporter.jar"/>
+        <jar destfile="${basedir}/dist/OCKARATimporter.jar" update="true">
+            <fileset file="${basedir}/OCKARATimporter_version.txt">
+            </fileset>
+        </jar>        
+        <!-- END -->               
+        
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- Resource Datei für OCKARAT ausschliessen -->
+        <jar destfile="${basedir}/dist/${ant.project.name}.jar" basedir="${dir.build.classes}" 
+             excludes="**/de/di/xml/resources/product_OCKARATimporter.properties">
+            <fileset file="${basedir}/${ant.project.name}_version.txt">
+            </fileset>
+        </jar>
+        
+        <copy file="${basedir}/dist/${ant.project.name}.jar" tofile="${product.dir.deploy}/${ant.project.name}_${app.build}.jar"/>
+        <copy file="${basedir}/dist/${ant.project.name}.jar" tofile="${product.dir.deploy}/${ant.project.name}.jar"/>
+        <copy file="${basedir}/${ant.project.name}_version.html" tofile="${product.dir.deploy}/${ant.project.name}_version.html"/>
+        <copy file="${basedir}/${ant.project.name}_version.txt" tofile="${product.dir.deploy}/${ant.project.name}_version.txt"/>                
+        
+        <!-- Resource Datei für XML und product.properties umtauschen -->
+        <jar destfile="${basedir}/dist/OCKARATimporter.jar" basedir="${dir.build.classes}" 
+             excludes="**/de/di/xml/resources/product_XMLimporter.properties,**/de/di/xml/resources/product.properties">
+            <fileset dir="${basedir}/ockarat"/>
+            <fileset file="${basedir}/OCKARATimporter_version.txt">
+            </fileset>
+        </jar>
+        
+        <!-- NEW -->         
+        <copy file="${basedir}/dist/OCKARATimporter.jar" tofile="${product.dir.deployOCKARAT}/OCKARATimporter_${app.build}.jar"/>
+        <copy file="${basedir}/dist/OCKARATimporter.jar" tofile="${product.dir.deployOCKARAT}/OCKARATimporter.jar"/>
+        <copy file="${basedir}/OCKARATimporter_version.html" tofile="${product.dir.deployOCKARAT}/OCKARATimporter_version.html"/>
+        <copy file="${basedir}/OCKARATimporter_version.txt" tofile="${product.dir.deployOCKARAT}/OCKARATimporter_version.txt"/>
+        
+       <copy file="${basedir}/dist/OCKARATimporter.jar" tofile="${product.file.jar}/OCKARATimporter.jar"/>
+        <!-- END --> 
+        
+    </target>
+    
+</project>

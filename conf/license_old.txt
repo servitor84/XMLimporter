@@ -1,0 +1,11 @@
+client=ELO Digital Office GmbH
+ELO-version=Professional
+ERP-system=--
+license-type=1 Server
+product=DOKinform XMLimporter for ELO
+ELO-key=ELO Digital Office GmbH
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=a27c4e4806ee304f4bf44a2a8d52c430889545a1
+bytes1=909d4721ebfdac18465882e36a1d2da5c15a019c
+
+For Github

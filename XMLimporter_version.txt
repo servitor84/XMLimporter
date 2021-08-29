@@ -1,0 +1,59 @@
+Versionsgeschichte DOKinform XMLimporter
+===================================================================
+
+20.0 (build 01153)    20.07.2021    Jar Pfad im Dateisystem geändert (für ELO20)
+11.0 (build 01149)    24.02.2021    ELOix Lib. for ELO20 - own ELOclient and not from DOKInform
+11.0 (build 01148)    14.02.2021    ELOClient class for ELO20 adjusted (ELOClient extends ELOClientNG from DOKInform20)
+11.0 (build 01139)    18.05.2020    log Zeilen hinzugefügt für AS Rule
+11.0 (build 01138)    05.03.2020    desc- and indexvalues-lengthcontroll (<=127 and <= 255) 
+11.0 (build 01137)    20.02.2020    Verschlüßeltes PWD wird aus config gelesen, entschlüßelt und Verbindung mit IX dann hergestellt
+11.0 (build 01135)    08.10.2019    Lizenzcheck für ELO12:!serno.equals(client.getValue) mit !serno.contains(client.getValue) ersetzt
+11.0 (build 01134)    19.09.2019    Einige überflüssigen Properties aus Konfig Datei entfernt
+11.0 (build 01133)    21.08.2019    Wenn PDF gerade von einem anderen Programm zugegriffen wird, dann mit den n?chsten Dokumenten fortsetzen
+11.0 (build 01132)    14.08.2019    SIG bleiben in Input, in Log Meldung zu oft ausgegeben, Log wird zu gro?
+11.0 (build 01131)    11.08.2019    Info, dass soviele SIG Dateien vorhanden sind, wird nicht mehr mehrmals ausgegeben
+11.0 (build 01130)    26.07.2019    SIG kann nicht verschoben werden, weil die entsprechende XML fehlt. Es wird jetzt 10x versucht zu verschieben und dann die Bearbeitung fortgesetzt.
+11.0 (build 01129)    22.05.2019    
+                           - PDF blieb in Input bei Error Fall. Ersetzen von .sig mit .pdf klappte nicht, weil toLowerCase nicht verwendet wurde
+                           - Wenn gleiches Dok. nochmal in Input abgelegt wird, wird die sigfile nicht erstellt, weil sie in ein Array zwischen gespeichert ist; Arra
+11.0 (build 01127)    14.05.2019    Dubletten-Dateien mit TimeStamp versehen
+10.0 (build 01126)    13.05.2019    Masknames will be in ELO11 and ELO12 also readed
+10.0 (build 01125)    23.04.2019    Dateien, die in input Ordner h?ngen bleiben und nicht in duplicates Ordner verschoben werden, werden gel?scht
+10.0 (build 01123)    03.12.2018    Bei falschem Maskenname bleibt die PDF-Datei im Input-Ordner h?ngen. Gel?st
+10.0 (build 01122)    27.11.2018     Addition of: Encoding of special character especially in the name (docfile) + reconnect
+10.0 (build 01121)    20.11.2018    possibility to reconnect is added
+10.0 (build 01120)    08.10.2018    by duplicate search only via md5 version without search via indexfield
+10.0 (build 01119)    17.07.2018    Bei schon existierenden Dateien w?hrend des Backups werden die Dateien trotzdem dort geschoben mit einem Zeitstempel + ungebrauchte Properties in der Config Datei entfernt + Build Prozess erweitert
+10.0 (build 01118)    25.03.2018    3
+10.0 (build 01118)    25.03.2018    Versioning: Indexfields as groupname of mask
+10.0 (build 01118)    25.03.2018    Versioning: Indexfields as groupname of mask
+10.0 (build 01117)    14.03.2018    exception Mailing deactivated + Build optimasation
+10.0 (build 01116)    19.02.2018    xml version from 2.0.0 to 11.0.0 - so no message by comparision of xml with ix(10)
+10.0 (build 01115)    16.02.2018    product.properties in de.di.xml.resources added - for importerversion servlet
+10.0 (build 01113)    12.02.2018    function for numeric indexes added
+10.0 (build 01110)    06.02.2018    Bug bei der Ablage einer Referenz behoben
+10.0 (build 01109)    27.01.2018    changes in ELOimporter.java. the attribute name of the Index nodes can be the groupename
+10.0 (build 01108)    12.01.2018    indexfield-name can be also a charactersequence (groupname)
+10.0 (build 01107)    09.01.2018    same functionality with other name (OCKARATimporter)
+10.0.0 (build 01106)    14.11.2017    Location of build files changed - D:\Work\Java\OwnCloud\DOKINFORM\DIST\PRODUCTS -
+10.0.0 (build 01105)    08.11.2017    in case of an error the xml file remains locked and will not be released, which means that it can not be moved to the error folder - solved
+10.0.0 (build 01103)    01.11.2017    doubly eloclient closing commented - nullpointerexception problem
+10.0.0 (build 01102)    01.11.2017    version changed to 10
+9.0.0 (build 01099)    30.10.2017    namespace of the packeges changed
+9.0.0 (build 01094)    25.10.2017    License map filled with values - method check in License called
+9.0.0 (build 01093)    25.10.2017    ELOClient constructor: "settings = set" added
+9.0.0 (build 01092)    25.10.2017    the modification is deleted from login; didn't work. User as Administrator again
+9.0.0 (build 01085)    23.10.2017    altough ixconnection to clientinfo in the login method
+9.0.0 (build 01082)    23.10.2017    login() methods changed - login with existing ticket
+9.0.0 (build 01081)    23.10.2017    user changed from Administrator to XMLinporter
+9.0.0 (build 01079)    09.10.2017    The second parameter of the method findDoc deleted - filter only about md5
+9.0.0 (build 01044)    20.07.2016    Added servlet for getting service details
+9.0.0 (build 01043)    19.07.2016    Added compatibility check
+9.0.0 (build 01042)    01.06.2016    Bug 86. Solved the problem with already existing backup files. 
+9.0.0 (build 01041)    26.05.2016    Caching docmasklines by GROUP for searching
+9.0.0 (build 01040)    19.05.2016    Solved class conflict
+9.0.0 (build 01014)    19.05.2016    Solved duplicates problem (bug 79)
+9.0.0 (build 01013)    16.05.2016    Solved xdate problem (bug 78)
+9.0.0 (build 01012)    12.05.2016    Searching a previous version of a document by objkeys was buggy. Solved with new search type
+9.0.0 (build 01011)   06.05.2016    Solved versioning bug. The versioning was working olny if the Duplicate check was set on false.
+9.0.0 (Build .933)    15.06.2015    - added err file containing the error before move
